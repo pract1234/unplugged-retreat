@@ -16,7 +16,18 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navsite {
+  display: flex;
+}
+.navlink {
+  flex-flow: row;
+  flex-basis: auto;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -262,4 +273,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
