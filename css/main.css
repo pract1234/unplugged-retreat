@@ -1,33 +1,230 @@
 /*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
-
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html {
-  color: #222;
+  color: white;
   font-size: 1em;
   line-height: 1.4;
+  font-family: sans-serif;
 }
-.content-wrapper {
+
+header,
+footer {
+  background-color: #202322;
+  color: white;
+  font-family:
+  width: 100%;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
-.navsite {
+
+@media screen (min-width: 760px){
+  justify-content: space-between;
+}
+
+
+header {
+    padding: 15px 0;
+}
+
+header h1 {
+  font-size: 50px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.topheader {
   display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid grey;
 }
-.navlink {
+
+.bottomheader {
+  background: url("../assets/jake-melara-30679-unsplash.jpg");
+  flex: 1 1 1200px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.content-wrapper {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav ul {
+  justify-content: space-around;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav li a {
+  text-decoration: none;
+  justify-content: space-between;
   flex-flow: row;
-  flex-basis: auto;
+  color: white;
+  padding: 0 20px;
 }
+
+a:hover {
+  color: orange;
+}
+
+.aside {
+  background-color: #527158;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+@media screen (min-width:760px) {
+  .aside {
+      max-height: 700px;
+      margin: 20px;
+      display: flex;
+      padding: 20px;
+  }
+
+  .writing {
+      padding: 20px 20px 20px 20px:
+  }
+
+  .form {
+    max-height: 600px;
+    margin: 20px;
+    display: flex;
+  }
+}
+
+.form-email {
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  height: 3em;
+  width: 320px;
+  color: grey;
+}
+
+.form-btn {
+  text-align: center;
+  box-sizing: border-box;
+  height: 3em;
+  width: 320px;
+  color: grey;
+  background-color: #2a423a;
+}
+
+.form-btn:hover {
+  color: orange;
+}
+
+.fontawesome-icon i {
+  height: 100%;
+}
+
+.features {
+  background-image: url("../assets/rawpixel-800820-unsplash1.jpg");
+  margin: 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  }
+  
+h2 {
+  font-size: 2rem;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+  flex: 1;
+  box-sizing: border-box;
+  flex-basis: 30%;
+}
+
+.fontawesome-icon i {
+  height: 100px;
+  width: 100px;
+}
+@media screen (min-width: 760px){
+.features {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.reviews {
+  background-color: #2a423a;
+  margin: 0;
+  color: inherit: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  flex-flow: row wrap;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.reviews img {
+  width: 90%;
+  align-items: center;
+  align-content: center;
+}
+
+.reviews h2 {
+  text-align: center;
+}
+
+.reviews p {
+  text-align: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-icons p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -37,7 +234,6 @@ html {
  *
  * Customize the background color to match your design.
  */
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -51,7 +247,6 @@ html {
 /*
  * A better looking default horizontal rule
  */
-
 hr {
   display: block;
   height: 1px;
@@ -66,7 +261,6 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
 audio,
 canvas,
 iframe,
@@ -79,7 +273,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-
 fieldset {
   border: 0;
   margin: 0;
@@ -89,7 +282,6 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-
 textarea {
   resize: vertical;
 }
@@ -97,7 +289,6 @@ textarea {
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -108,15 +299,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
-
 .hidden {
   display: none !important;
 }
@@ -129,7 +317,6 @@ textarea {
 *    causes content to wrap 1 word per line:
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
-
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -148,7 +335,6 @@ textarea {
 * to be focusable when navigated to via the keyboard:
 * https://www.drupal.org/node/897638
 */
-
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -163,7 +349,6 @@ textarea {
 /*
 * Hide visually and from screen readers, but maintain layout
 */
-
 .invisible {
   visibility: hidden;
 }
@@ -179,7 +364,6 @@ textarea {
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
-
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -197,15 +381,14 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -214,8 +397,8 @@ textarea {
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
 @media print {
+
   *,
   *:before,
   *:after {
@@ -225,16 +408,20 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
+
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -243,14 +430,17 @@ textarea {
   a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -258,16 +448,19 @@ textarea {
   thead {
     display: table-header-group;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
