@@ -1,0 +1,14 @@
+@media screen (min-width:768px){
+  .aside {
+      max-height: 700px;
+      margin: 20px;
+      display: flex;
+      padding: 20px;
+  }
+}
+
+@media screen (min-width: 1200px){
+
+
+
+}

@@ -28,10 +28,6 @@ footer {
   flex-flow: row wrap;
 }
 
-@media screen (min-width: 760px){
-  justify-content: space-between;
-}
-
 
 header {
     padding: 15px 0;
@@ -44,6 +40,7 @@ header h1 {
 }
 
 .topheader {
+  width: 60%;
   display: flex;
   flex-flow: row wrap;
   border-bottom: 1px solid grey;
@@ -76,6 +73,7 @@ header nav {
 }
 
 nav ul {
+  width: 60%;
   justify-content: space-around;
   display: flex;
   list-style: none;
@@ -157,10 +155,7 @@ a:hover {
   justify-content: center;
   flex-flow: row wrap;
   }
-  
-h2 {
-  font-size: 2rem;
-}
+
 
 .features .features-items {
   display: flex;
@@ -177,13 +172,7 @@ h2 {
   height: 100px;
   width: 100px;
 }
-@media screen (min-width: 760px){
-.features {
-    display: flex;
-    justify-content: space-between;
-  }
 
-}
 
 .reviews {
   background-color: #2a423a;
@@ -198,18 +187,33 @@ h2 {
   text-align: center;
 }
 
-.reviews img {
+.topreviews {
+  box-sizing: border-box;
+  margin: 0;
+  padding: inherit;
+  flex:1;
+  flex-basis: 30%;
+}
+
+.article {
+  flex:1;
+}
+@media screen (min-width: 768px){
+  .reviews {
+    display: flex;
+    justify-content: space-between;
+}
+}
+img {
   width: 90%;
   align-items: center;
   align-content: center;
 }
 
-.reviews h2 {
-  text-align: center;
-}
 
-.reviews p {
-  text-align: center;
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
 }
 
 footer .social-icons {
