@@ -10,7 +10,7 @@
    ========================================================================== */
 html {
   color: white;
-  font-size: 1em;
+  font-size: 62.5%;
   line-height: 1.4;
   font-family: sans-serif;
 }
@@ -30,20 +30,22 @@ footer {
 
 
 header {
-    padding: 15px 0;
+    padding: 1.5rem 0;
 }
 
 header h1 {
-  font-size: 50px;
+  font-size: 5rem;
   text-align: left;
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 
 .topheader {
-  width: 60%;
+  width: 90%;
+  padding: 0 2rem;
   display: flex;
   flex-flow: row wrap;
   border-bottom: 1px solid grey;
+  justify-content: center;
 }
 
 .bottomheader {
@@ -63,7 +65,7 @@ header h1 {
 }
 
 header nav {
-  width: 60%;
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -73,8 +75,8 @@ header nav {
 }
 
 nav ul {
-  width: 60%;
-  justify-content: space-around;
+  width: 90%;
+  justify-content: flex-end;
   display: flex;
   list-style: none;
   text-decoration: none;
@@ -85,15 +87,45 @@ nav li a {
   justify-content: space-between;
   flex-flow: row;
   color: white;
-  padding: 0 20px;
+  padding: 0 2rem;
+  font-size: 1.5rem;
 }
 
 a:hover {
   color: orange;
 }
 
+.mission{
+  background-color: #527158;
+  background-size: cover;
+}
+
+.mission-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 5rem 1rem 5rem;
+  }
+
+.mission-content p {
+        width: 50%;
+  }
+.map {
+  width:100%;
+}
+
+.contact-section{
+  background-color: #2a423a;
+}
+.reviewsabout{
+  background-color: #202322;
+  color: white;
+}
+
 .aside {
   background-color: #527158;
+  height: 40rem;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -101,40 +133,34 @@ a:hover {
   flex-flow: row wrap;
 }
 
-@media screen (min-width:760px) {
-  .aside {
-      max-height: 700px;
-      margin: 20px;
-      display: flex;
-      padding: 20px;
+.writing {
+      box-sizing:border-box;
+      font-size: 2rem;
+      padding: 0 2rem 0 2rem;
   }
 
-  .writing {
-      padding: 20px 20px 20px 20px:
-  }
-
-  .form {
-    max-height: 600px;
-    margin: 20px;
+.form {
+    max-height: 60rem;
+    margin: 1rem;
     display: flex;
+    flex-direction: column;
   }
-}
+
 
 .form-email {
-  flex-flow: row wrap;
-  margin-bottom: 10px;
   text-align: center;
   box-sizing: border-box;
-  height: 3em;
-  width: 320px;
+  height: 3rem;
+  width: 32rem;
   color: grey;
+  background-color: #fff;
 }
 
 .form-btn {
   text-align: center;
   box-sizing: border-box;
-  height: 3em;
-  width: 320px;
+  height: 3rem;
+  width: 32rem;
   color: grey;
   background-color: #2a423a;
 }
@@ -149,28 +175,39 @@ a:hover {
 
 .features {
   background-image: url("../assets/rawpixel-800820-unsplash1.jpg");
-  margin: 0;
+  padding-left: 2rem;
   background-size: cover;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  align-items: center;
+  flex-direction: column;
   }
 
+.features-title {
+  text-align: center;
+  display:block;
+  font-size: 2rem;
+}
 
-.features .features-items {
+.features-items {
+  padding: 10rem 17rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
   text-align: center;
   flex: 1;
+  font-size: 1.4rem;
   box-sizing: border-box;
-  flex-basis: 30%;
+  flex-flow: column;
+
 }
 
 .fontawesome-icon i {
-  height: 100px;
-  width: 100px;
+  width: 8rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 
@@ -182,9 +219,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  flex-flow: row wrap;
-  padding: 20px 20px;
+  padding: 2rem 2rem;
   text-align: center;
+  flex-direction: column;
+  font-size: 1.5rem;
 }
 
 .topreviews {
@@ -198,12 +236,7 @@ a:hover {
 .article {
   flex:1;
 }
-@media screen (min-width: 768px){
-  .reviews {
-    display: flex;
-    justify-content: space-between;
-}
-}
+
 img {
   width: 90%;
   align-items: center;
@@ -212,8 +245,8 @@ img {
 
 
 footer .content-wrapper {
-    width: 55%;
-    margin: 50px 0;
+    font-size: 1.5rem;
+    margin: 5rem 0;
 }
 
 footer .social-icons {
@@ -226,7 +259,13 @@ footer .social-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8px;
+  padding: 0 1rem;
+}
+footer .copyright p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*

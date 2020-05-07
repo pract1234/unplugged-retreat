@@ -1,14 +1,148 @@
-@media screen (min-width:768px){
-  .aside {
-      max-height: 700px;
-      margin: 20px;
-      display: flex;
-      padding: 20px;
+
+@media only screen and (min-width: 768px) {
+    /* General styles */
+    /* Header */
+
+header {
+     display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+     }
+
+header .content-wrapper {
+    justify-content: space-between;
+    }
+
+header nav ul {
+    justify-content:space-between;
+    }
+
+    /* Hero Area */
+.mission-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
+    /* Aside */
+  aside .content-wrapper {
+        justify-content: space-between;
+        display: flex;
+        margin: 50px 0;
+    }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+        width:
+        margin: 0;
+    }
+
+    /* Features */
+
+.features  {
+           justify-content:space-between;
+           display: flex;
+           align-items: center;
+           flex-flow: row wrap;
+  }
+
+.features-title{
+    justify-content: center;
+    padding: 4rem 11rem 1rem 11rem;
+    width:100%;
+  }
+
+.features-items {
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   box-sizing: border-box;
+   flex-flow: row wrap;
+   padding: 12rem 15rem 12rem 15rem;
+   width: 33%;
+   margin: 0 5rem 0 5 rem;
+ }
+
+    /* Reviews */
+  .reviews article {
+      display: flex;
+    }
+
+.reviews {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      align-self: stretch;
+      padding: 20px 20px;
+      text-align: center;
+      flex-direction: row;
+    }
+
+    /* Footer */
+footer .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+      padding: 20px 20px;
+      text-align: center;
+      flex-direction: row;
+    }
+.social  {
+  padding-left: 3rem;
+}
+
+  footer .contact {
+        justify-content:space-between;
+        margin-bottom: 0;
+    }
+
+footer .copyright p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 }
 
 @media screen (min-width: 1200px){
 
+.features {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  padding-top: 30rem;
+  padding-bottom: 30rem;
+}
+.features-title {
+  margin-top:2rem;
+}
 
+.features-items {
+  flex: 1;
+  padding: 17rem 35rem 17rem 35rem;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  flex-flow: row wrap;
+  width: 33%;
+  color: pink;
+}
+
+.reviews {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      align-self: stretch;
+      padding: 20px 20px;
+      text-align: center;
+      flex-direction: row;
+    }
 
 }
