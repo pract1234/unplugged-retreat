@@ -141,12 +141,20 @@ a:hover {
   background-color: #527158;
   background-size: cover;
   font-size: 1.3rem;
+  height: 80vh;
 }
 .fmission-content {
   text-align: left;
   font-size:150%;
 }
-
+section h2{
+    background-size: cover;
+    font-size: 250%;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding-top: 6%;
+    padding-bottom: 3%
+}
 .map figure {
     width: 100%;
     height: 0;
@@ -262,7 +270,6 @@ a:hover {
   align-items: center;
   align-content: center;
 }
-
 
 .reviews {
   background-color: #2a423a;
