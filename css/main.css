@@ -132,6 +132,14 @@ a:hover {
     font-size: 200%;
     margin: 0 0 0 0;
 }
+.faqh2 {
+    width: 100%;
+    text-align: center;
+    background-color: #527158;
+    background-size: cover;
+    font-size: 200%;
+    margin: 0 0 0 0;
+}
 .fmission{
   display:grid;
   grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
