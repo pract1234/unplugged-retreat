@@ -349,7 +349,15 @@ footer i{
   width: 5%;
   height: 5%;
 }
-
+.fa-instagram:hover{
+  color: #517fa4;
+}
+.fa-facebook:hover{
+  color: #3b5998;
+}
+.fa-twitter:hover{
+  color: #00cced;
+}
 
 footer .copyright p {
   display: flex;
